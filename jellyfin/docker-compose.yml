@@ -13,4 +13,4 @@ services:
       - ./cache:/cache
       - ./media:/media
     environment:
-      - TZ=Asia/Singapore
+      - TZ=Asia/Singapore (use your own timezone)
