@@ -15,14 +15,11 @@ mkdir -p ~/docker/jellyfin/meida
 - config (where we can config the service)
 - medai (where all our content will be stored)
 
-Then you create a docker-compose.yml file and dump in the code.
+Then you create a [docker-compose.yml](./docker-compose.yml) file and dump in the code.
 ```
 cd ~/docker/jellyfin
 nano docker-compose.yml
 ```
-
-[You can find the file here!](./docker-compose.yml)
-
 
 then deploy the docker service with 
 ```
