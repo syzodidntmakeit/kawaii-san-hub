@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  librespeed:
+    image: lscr.io/linuxserver/librespeed:latest
+    container_name: librespeed
+    environment:
+      - PUID=1000  # your user ID
+      - PGID=1000  # your group ID
+      - TZ=Asia/Singapore
+    volumes:
+      - ./config:/config
+    ports:
+      - 8015:80
+    restart: unless-stopped
