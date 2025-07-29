@@ -5,8 +5,8 @@ Setup locally so you never worry about being tracked. And stream your downloaded
 
 ---
 
-## 🪼 Setting up Jellyfin is easy!
-we just need 3 directories. We do this with
+## 🐳 Docker Compose
+We just need 3 directories. We do this with
 ```
 mkdir -p ~/docker/jellyfin/config
 mkdir -p ~/docker/jellyfin/cache
@@ -21,8 +21,8 @@ Then you create a [docker-compose.yml](./docker-compose.yml) file and dump in th
 cd ~/docker/jellyfin
 nano docker-compose.yml
 ```
-
-then deploy the docker service with 
+## 🚀 Start Jellyfin
+Deploy the docker service with 
 ```
 docker compose up -d
 ```
