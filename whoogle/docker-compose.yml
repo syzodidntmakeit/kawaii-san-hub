@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  whoogle:
+    image: benbusby/whoogle-search
+    container_name: whoogle
+    ports:
+      - "8012:5000" #Port is arbitrary
+    environment:
+      - WHOOGLE_CONFIG_DISABLE=0
+    restart: unless-stopped
+#I'm a little pookie-bear
