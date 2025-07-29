@@ -21,6 +21,9 @@ cd ~/docker/jellyfin
 nano docker-compose.yml
 ```
 
+[You can find the file here!](./docker-compose.yml)
+
+
 then deploy the docker service with 
 ```
 docker compose up -d
