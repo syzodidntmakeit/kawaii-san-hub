@@ -1,25 +1,25 @@
 # 🌐 kawaii-san-hub
 
-Welcome to **kawaii-san-hub** — a self-hosted hub for all my local services like Jellyfin, Nextcloud, and more. Powered by Docker and managed through Portainer. This project is built on Ubuntu Server and designed to work behind CGNAT using NetBird and Cloudflare Tunnels.
+Welcome to **kawaii-san-hub** — a self-hosted hub for all my local services like Jellyfin, Nextcloud, and more. Powered by Ubuntu Server OS (a headless operating system), Docker 🐳 and managed through Portainer. This project is designed to work behind CGNAT because Starhub doesn't like fun, I will be using NetBird and Cloudflare Tunnels. 
 
 ---
 
 ## 🧱 Stack Overview
 
-| Service         | Description                                | Access URL (example)             |
-|-----------------|--------------------------------------------|----------------------------------|
-| **Portainer**   | Docker UI to manage containers             | http://server-ip:9000            |
-| **Jellyfin**    | Stream Anime                               | https://jellyfin.kawaii-san.org  |
-| **Nextcloud**   | Cloud Storage and Note taking              | https://nextcloud.kawaii-san.org |
-| **Navidrome**   | Stream music in FLAC and WAV               | https://navidrome.kawaii-san.org | 
-| **Whoogle**     | Local Search Engine                        | https://whoogle.kawaii-san.org   |
-| **Filebrowser** | Lightweight file manager over webUI        | https://files.kawaii-san.org     |
-| **Joplin**      | Private note-taking based on Markdown      | https://joplin.kawaii-san.org    |
-| **netdata**     | Moonitor the server and performance        | https://status.kawaii-san.org    |
-| **Uptime-Kuma** | Monitor the services and productivity      | https://uptime.kawaii-san.org    |
-| **Vaultwarden** | Self-hosted Password Manager               | https://passwords.kawaii-san.org |
-| **AI + OpenUI** | Local AI Models with sick as f*ck webUI    | https://ai.kawaii-san.org        |
-| **Speedtest**   | Speedtest.net at home                      | https://speedtest.kawaii-san.org |
+| Service             | Description                                | Access URL (example)             |
+|---------------------|--------------------------------------------|----------------------------------|
+| **Portainer**       | Docker UI to manage containers             | http://server-ip:9000            |
+| **Jellyfin**        | Stream Anime                               | https://jellyfin.kawaii-san.org  |
+| **Nextcloud**       | Cloud Storage and Note taking              | https://nextcloud.kawaii-san.org |
+| **Navidrome**       | Stream music in FLAC and WAV               | https://navidrome.kawaii-san.org | 
+| **Whoogle**         | Local Search Engine                        | https://whoogle.kawaii-san.org   |
+| **Filebrowser**     | Lightweight file manager over webUI        | https://files.kawaii-san.org     |
+| **Joplin**          | Private note-taking based on Markdown      | https://joplin.kawaii-san.org    |
+| **netdata**         | Moonitor the server and performance        | https://status.kawaii-san.org    |
+| **Uptime-Kuma**     | Monitor the services and productivity      | https://uptime.kawaii-san.org    |
+| **Vaultwarden**     | Self-hosted Password Manager               | https://passwords.kawaii-san.org |
+| **Ollama + OpenUI** | Local AI Models with sick as f*ck webUI    | https://ai.kawaii-san.org        |
+| **Librespeed**      | Speedtest.net at home                      | https://librespeed.kawaii-san.org|
 
 ---
 
@@ -73,3 +73,9 @@ sudo sh get-docker.sh
 sudo apt install docker-compose -y
 sudo usermod -aG docker $USER
 ```
+### 🐦 NetBird Installation
+```bash
+curl -fsSL https://pkgs.netbird.io/install.sh | sh
+netbird up
+```
+I love my bird. NetBird that is.
