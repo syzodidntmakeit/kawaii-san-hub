@@ -20,7 +20,7 @@ docker compose up -d
 WE WANT EASY ACCESS! So we get cloudflare tunnel
 Edit the "/etc/cloudflared/config.yml
 ```
-  - hostname: nextcloud.kawaii-san.org
+  - hostname: nextcloud.domain.com
     service: http://localhost:8018
 ```
 Restart the service:
@@ -29,7 +29,7 @@ sudo systemctl restart cloudflared
 ```
 Then route the DNS:
 ```
-cloudflared tunnel route dns <tunnel_ID> nextcloud.kawaii-san.org
+cloudflared tunnel route dns <tunnel_ID> nextcloud.domain.com
 ```
 
 ## 🔵NEXCTLOUD IS A WHINY LITTLE WH*RE
@@ -45,7 +45,7 @@ docker cp nextcloud-app:/var/www/html/config/config.php ~/config.php
 array (
   0 => 'localhost',
   1 => 'your-server-ip',
-  2 => 'nextcloud.kawaii-san.org',
+  2 => 'nextcloud.domain.com',
 ),
 ```
 3. Copy it back
