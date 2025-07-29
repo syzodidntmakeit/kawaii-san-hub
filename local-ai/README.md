@@ -46,7 +46,7 @@ Once you've gotten your browser up,
 
 ## ☁️ Cloudflare Tunnel Configuration
 I am, therefore, I am. So we get cloudflare tunnel
-Edit the "/etc/cloudflared/config.yml
+Edit the '/etc/cloudflared/config.yml'
 ```
   - hostname: ai.domain.com
     service: http://localhost:3000
