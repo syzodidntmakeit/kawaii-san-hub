@@ -63,7 +63,7 @@ Create and edit the config.yml file at:
 ```
 nano ~/.cloudflared/config.yml
 ```
-And paste in the config.yml code here.
+And paste in the [config.yml](./config.yml) code here.
 > Obviosuly don't forget to change the tunnel_ID to your own ID
 ### Step 5: Move th config file
 **cloudflare** is lazy, so we gotta move and copy the config files ourseles.
