@@ -1,7 +1,7 @@
-tunnel: jellyfin-tunnel
+tunnel: tunnel
 credentials-file: /etc/cloudflared/<tunnel-id>.json #Change tunnel-id
 
 ingress:
-  - hostname: jellyfin.kawaii-san.org
-    service: http://localhost:8096
+  - hostname: service.domain.com
+    service: http://localhost:<service-port>
   - service: http_status:404
