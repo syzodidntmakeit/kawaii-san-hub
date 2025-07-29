@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  jellyfin:
+    image: jellyfin/jellyfin:latest
+    container_name: jellyfin
+    restart: unless-stopped
+    network_mode: bridge
+    ports:
+      - "8096:8096"  # Web UI
+    volumes:
+      - ./config:/config
+      - ./cache:/cache
+      - ./media:/media
+    environment:
+      - TZ=Asia/Singapore
