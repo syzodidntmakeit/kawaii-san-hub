@@ -85,6 +85,9 @@ cloudflared tunnel route dns tunnel service.domain.com
 ```
 This creates a proxied DNS record in your Cloudflare dashboard. Go to your cloudflare dashboard to check!
 
+If you don't wanna use CLI to create tunnels, you can do it in the Cloudflare dashboard itself, but it less fun.
+Go to you dash.cloudflare.com > then to your domain > then to DNS and see all Records, for every sercice you have, to each port, you have set a domain name. Use that domain name to create a record.
+
 ### Step 7: Enabling
 ```
 sudo systemctl enable cloudflared
