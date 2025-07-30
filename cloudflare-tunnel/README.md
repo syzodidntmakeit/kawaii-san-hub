@@ -99,4 +99,4 @@ sudo systemctl status cloudflared
 ```
 ---
 
-## ✨Done! Now go to your domain and if it wokrs, you just made a website. Now piss off.
+## ✨Done! Now go to your domain and if it works, you just made a website. Now piss off.
