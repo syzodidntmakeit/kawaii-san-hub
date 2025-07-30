@@ -1,63 +1,71 @@
-# AI Chat bot - kawaii-san.org
+# AI Chat bot: It gets lonely in here - kawaii-san.org
 
-## 🧠 Local LLM with Ollama + Open WebUI
-I wanted a chatbot I can run loccaly. And since i have the hardware to perform such heavy task, I will.
-- I amd using Ollama as it is the most begineer and CLI (command line interface) friendly while also giving you control. (Like the Linux Mint of AI)
-- I will also be using Open WebUI as I like the way it looks, and LM Stuios doesn't a web interface natively.
-- And of course we will tunnel it with cloudflare tunnel. Duh
+I wanna use an AI model, but I am afraid of OpenAI, Microsoft, Google and Deepseek stealing my data.
+And more primarily, in my Polytechnic, chatgpt.com is blacklisted. Just why? And why just chatgpt? Anyways, I have the hardware and knowledge to run my own local AI models, so why not right?
 
-## 🔧 Setup
-First, install Ollama.
+## Beep boop says hi 🧠
+
+My PC can't handle the big bois like ChatGPT, Deepseek R1, Claude and other woopity scoop. But it CAN handle smaller Large Language Models (counter-intuitive ahh name) like Mistral. Like a "we have chatgpt at home" but it's actually pretty good. I will not explain **why** I am unable to run more powerful AI. That you will have to do your own research. Probably just chatgpt why I can't use chatgpt (meta af)
+
+So, I will be using:
+- Ollama (for AI Models)
+- Open WebUI (for web user interface)
+
+This is because Ollama only supports CLI or command-line interface. This is what CLI looks like.
+
+<img width="512" height="384" alt="Linux_command-line _Bash _GNOME_Terminal _screenshot" src="https://github.com/user-attachments/assets/e55801cf-7b87-4a24-98b4-51b95febe9ae" />
+
+Which is pretty cool, I'll admit. But not for today's project.
+
+## Hellow World! 🖥️
+
+First, install Ollama. Ez. just-
 ```
 curl -fsSL https://ollama.com/install.sh | sh
 ```
+
 That's literally it. That's the hardest part.
-You can test to see if it works. Or just use your models at CLI level.
+Whew. All in good days work... I then tested the download with a "test" model. (wink wink)
+
 ```
 ollama run mistral
 ```
 
-## 🖼️ Interface
-Now we get Open WebUI. It's basically a fortnite skin from the battlepass. (idk how that works). But basically, somwone else has done the hardwork for you. Just sit back, relax, and pretend it was all you.
+This both PULLS and RUNS the model from the Ollama library. It's also the only AI model small enough where my PC doesn't turn into a jet engine when I run it, but also good enough to deserve my attention. (Mortal beings)
+
+## Yellow Squirrel 🐿️
+
+Yellow Squirrel refers to the front-end program I will be running, Open WebUI. It is a lightweight web development where it easily communicates with Ollama, so I don't even have to do anything. All I have to do is just run the service and it will do it all for me while also looking pretty slick.
+
+<img width="1400" height="700" alt="1_e_OETKtrx46jcUUpBXL80w" src="https://github.com/user-attachments/assets/77d482ef-aafd-47c8-8318-8f132c42ad17" />
+
 ```
 cd ~/docker/ai
 git clone https://github.com/open-webui/open-webui.git
 cd open-webui
 ```
+
 Start it up.
+
 ```
 docker compose up -d
 ```
-And now it's up. Go see for yourself.
-```
-http://<your-server-ip>:3000
-```
-You shoudl see a page like this:
+And then I set up a cloudflare subdomain cuz it's easy to remember, and I am lazy.
 
-<img width="1400" height="700" alt="1_e_OETKtrx46jcUUpBXL80w" src="https://github.com/user-attachments/assets/77d482ef-aafd-47c8-8318-8f132c42ad17" />
+## "Is anyone there?" 
 
-## 👷 Connect Open WebUI to Ollama
-Once you've gotten your browser up,
+Now I just introduce Open-san and Ollama-kun to each other. Aww. They're so cute together. Anyways...
+
 1. Make an account.
 2. Go to Settings > Models
 3. It shoudl detect ollama.
-4. Go to the ollama models lists and find for models that you can run locally and send it in here.
-5. Greet it with 3 fire emojis 🔥🔥🔥 It's important (it's not but whatever)
+4. Go to the ollama models lists and find a model (I will be using deepseek's R1 8b)
+5. Do 2 pushups.
 
-## ☁️ Cloudflare Tunnel Configuration
-I am, therefore, I am. So we get cloudflare tunnel
-Edit the '/etc/cloudflared/config.yml'
-```
-  - hostname: ai.domain.com
-    service: http://localhost:3000
-```
-Restart the service:
-```
-sudo systemctl restart cloudflared
-```
-Then route the DNS:
-```
-cloudflared tunnel route dns <tunnel_ID> ai.domain.com
-```
-## 🎉Congrats!
-Now you have your very own AI Chatbot that you can talk about sexually suggestive things to because you can't talk to women. I know you. I don't judge.
+## 🎉And that's it!
+
+Now I can pretend I have friends cuz I'm not smart enough to make real ones...
+Anyways, ain't this cool asf?
+
+<img width="1659" height="914" alt="image" src="https://github.com/user-attachments/assets/1569ae48-5538-45b3-862e-8eec0d5d8694" />
+
