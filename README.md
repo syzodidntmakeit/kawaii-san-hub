@@ -6,16 +6,16 @@ Welcome to **kawaii-san-hub** — a self-hosted hub for all my local services li
 
 ## 🧱 Stack Overview
 
-| Service             | Description                                | Access URL (example)             |
+| Service             | Description                                | Access URL                       |
 |---------------------|--------------------------------------------|----------------------------------|
-| **Portainer**       | Docker UI to manage containers             | http://server-ip:9000            |
-| **Jellyfin**        | Stream Anime                               | https://anime.kawaii-san.org     |
-| **Nextcloud**       | Cloud Storage and Note taking              | https://cloud.kawaii-san.org     |
+| **Portainer**       | Docker UI to manage my containers          | http://<server-ip>:9000          |
+| **Jellyfin**        | Stream Anime without Netflix               | https://anime.kawaii-san.org     |
+| **Nextcloud**       | Cloud storage, file sharing and backups    | https://cloud.kawaii-san.org     |
 | **Navidrome**       | Stream music in FLAC and WAV               | https://music.kawaii-san.org     | 
 | **Whoogle**         | Local Search Engine                        | https://whoogle.kawaii-san.org   |
-| **Filebrowser**     | Lightweight file manager over webUI        | https://files.kawaii-san.org     |
+| **Filebrowser**     | Lightweight file manager over WebUI        | https://files.kawaii-san.org     |
 | **Joplin**          | Private note-taking based on Markdown      | https://notes.kawaii-san.org     |
-| **netdata**         | Moonitor the server and performance        | https://monitor.kawaii-san.org   |
+| **netdata**         | Monitor the server and performance         | https://monitor.kawaii-san.org   |
 | **Uptime-Kuma**     | Monitor the services and productivity      | https://uptime.kawaii-san.org    |
 | **Vaultwarden**     | Self-hosted Password Manager               | https://passwords.kawaii-san.org |
 | **Ollama + OpenUI** | Local AI Models with sick as f*ck webUI    | https://ai.kawaii-san.org        |
