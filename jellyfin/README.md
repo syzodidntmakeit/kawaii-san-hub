@@ -65,4 +65,14 @@ Anyways, I can either save my content here;
 ~~~
 or route a ~/media/anime into the service and it's easier to remember. This is good practise, but I'm lazy.
 
-Anyways, bye bye cutie patootie!
+## The Content 📷
+
+No. I will not be downloading hentai on my server. (you disgust me)
+But I DO have a list of Anime I've been meaning to watch. Feel free to share your opinion with me so I can ignore it. F*ck you. Leave me alone.
+
+| Title | Episodes (Runtime) | Rating | 
+| --- | --- | --- |
+| Bocchi the Rock! | 12 Episodes (~4 hours) | 9/10 Ryo best girl |
+| Jujutsu Kaisen | 24 Episodes (~8 hours) | 8/10 Good show, shitty publisher | 
+
+Anyways, that's it. Bye bye cutie patootie!
