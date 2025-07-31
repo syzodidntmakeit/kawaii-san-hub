@@ -8,7 +8,7 @@ Welcome to **kawaii-san-hub** — a self-hosted hub for all my local services li
 
 | Service             | Description                                | Access URL                       |
 |---------------------|--------------------------------------------|----------------------------------|
-| **Portainer**       | Docker UI to manage my containers          | http://server-ip:9000            |
+| **Portainer**       | Docker UI to manage my containers          | http://portainer.kawaii-san.org  |
 | **Jellyfin**        | Stream Anime without Netflix               | https://anime.kawaii-san.org     |
 | **Nextcloud**       | Cloud storage, file sharing and backups    | https://cloud.kawaii-san.org     |
 | **Navidrome**       | Stream music in FLAC and WAV               | https://music.kawaii-san.org     | 
